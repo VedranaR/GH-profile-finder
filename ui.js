@@ -12,7 +12,7 @@ class UI {
             <a
               href="${user.html_url}"
               target="_blank"
-              class=" btn btn-primary btn-block"
+              class=" btn btn-primary btn-block mb-4"
               >View Profile</a
             >
           </div>
@@ -43,5 +43,9 @@ class UI {
       <h3 class="page-heading mb-3">Latest Repos</h3>
       <div id="repos"></div>
     `;
+  }
+
+  clearProfile() {
+    this.profile.innerHTML = "";
   }
 }
