@@ -45,6 +45,22 @@ class UI {
     `;
   }
 
+  //Show alert message for no user case
+  showAlert(message, className) {
+    //Create div
+    const div = document.createElement("div");
+    //add classes
+    div.className = className;
+    //add text
+    div.appendChild(document.createTextNode(message));
+    //get parent
+    const container = document.querySelector(".searchContainer");
+    //get search box
+    const search = document.querySelector(".search");
+    //insert alert
+    container.insertBefore(div, search);
+  }
+
   clearProfile() {
     this.profile.innerHTML = "";
   }
