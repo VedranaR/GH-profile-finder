@@ -47,6 +47,9 @@ class UI {
 
   //Show alert message for no user case
   showAlert(message, className) {
+    //Clear an old alert
+    this.clearAlert();
+
     //Create div
     const div = document.createElement("div");
     //add classes
@@ -59,6 +62,20 @@ class UI {
     const search = document.querySelector(".search");
     //insert alert
     container.insertBefore(div, search);
+
+    //timeout after 3 sec
+    setTimeout(() => {
+      this.clearAlert();
+    }, 3000);
+  }
+
+  //Clear alert message
+  clearAlert() {
+    const currentAlert = document.querySelector(".alert");
+
+    if (currentAlert) {
+      currentAlert.remove();
+    }
   }
 
   clearProfile() {
