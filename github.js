@@ -13,19 +13,19 @@ class GitHub {
       }&client_secret=${this.client_secret}`
     );
 
-    const reposResponse = await fetch(
+    const repoResponse = await fetch(
       `https://api.github.com/users/${user}?per_page=${this.repos_count}&sort=${
         this.repos_sort
       }&client_id=${this.client_id}&client_secret=${this.client_secret}`
     );
 
-    const profileData = await profileResponse.json();
+    const profile = await profileResponse.json();
 
-    const reposData = await reposResponse.json();
+    const repos = await repoResponse.json();
 
     return {
-      profile: profileData,
-      repos: reposData
+      profile,
+      repos
     };
   }
 }
