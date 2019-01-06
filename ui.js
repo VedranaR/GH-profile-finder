@@ -63,7 +63,7 @@ class UI {
     //insert alert
     container.insertBefore(div, search);
 
-    //timeout after 3 sec
+    //clear the alert div after 3 sec
     setTimeout(() => {
       this.clearAlert();
     }, 3000);
