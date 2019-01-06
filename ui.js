@@ -12,21 +12,21 @@ class UI {
             <a
               href="${user.html_url}"
               target="_blank"
-              class=" btn btn-primary btn-block mb-4"
+              class=" btn btn-primary btn-block mt-4 mb-4"
               >View Profile</a
             >
           </div>
           <div class="col-md-9">
-            <span class="badge badge-primary"
+            <span class="badge badge-info" style="font-size:100%"
               >Public Repos: ${user.public_repos}</span
             >
-            <span class="badge badge-primary"
+            <span class="badge badge-info" style="font-size:100%"
               >Public Gists: ${user.public_gists}</span
             >
-            <span class="badge badge-primary">Followers: ${
+            <span class="badge badge-info" style="font-size:100%">Followers: ${
               user.followers
             }</span>
-            <span class="badge badge-primary">Following: ${
+            <span class="badge badge-info" style="font-size:100%">Following: ${
               user.following
             }</span>
             <br />
