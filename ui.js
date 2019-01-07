@@ -76,7 +76,9 @@ class UI {
             <span class="badge badge-info p-2 m-2" style="font-size:100%">Forks: ${
               repo.forks_count
             }</span>
-
+            <span class="badge badge-success p-2 m-2" style="font-size:100%">Issues: ${
+              repo.open_issues_count
+            }</span>
             </div>
           </div>
         </div>
